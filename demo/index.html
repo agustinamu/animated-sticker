@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>animated-sticker · demo</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: radial-gradient(circle at 50% 20%, #17c2b4 0%, #0fada0 55%, #0c968b 100%);
+    color: #08302c;
+    min-height: 100vh;
+    padding: 32px 16px 64px;
+  }
+  h1 { text-align: center; margin: 0 0 4px; color: #043d38; }
+  p.sub { text-align: center; margin: 0 0 32px; color: #06514a; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .demo {
+    background: rgba(255,255,255,0.9);
+    border-radius: 18px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 6px 0 rgba(10,63,60,0.22);
+  }
+  .demo .box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 260px;
+  }
+  .demo code {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #14142b;
+    background: #eef7f6;
+    border-radius: 8px;
+    padding: 8px 10px;
+    word-break: break-word;
+  }
+</style>
+</head>
+<body>
+  <h1>animated-sticker</h1>
+  <p class="sub">Web Components sin dependencias · atributos configurables</p>
+
+  <div class="grid">
+    <div class="demo">
+      <div class="box"><sticker-limon size="220"></sticker-limon></div>
+      <code>&lt;sticker-limon&gt;</code>
+    </div>
+
+    <div class="demo">
+      <div class="box"><sticker-chorizo size="220"></sticker-chorizo></div>
+      <code>&lt;sticker-chorizo&gt;</code>
+    </div>
+
+    <div class="demo">
+      <div class="box"><sticker-limon size="220" feet="off"></sticker-limon></div>
+      <code>feet="off" · piernas quietas</code>
+    </div>
+
+    <div class="demo">
+      <div class="box"><sticker-chorizo size="220" feet="off"></sticker-chorizo></div>
+      <code>chorizo · feet="off"</code>
+    </div>
+
+    <div class="demo">
+      <div class="box"><sticker-limon size="220" speed="2"></sticker-limon></div>
+      <code>speed="2" · baila el doble de rápido</code>
+    </div>
+
+    <div class="demo">
+      <div class="box"><sticker-limon size="220" speed="0.5"></sticker-limon></div>
+      <code>speed="0.5" · a cámara lenta</code>
+    </div>
+
+    <div class="demo">
+      <div class="box"><sticker-limon size="220" paused></sticker-limon></div>
+      <code>paused · congelado</code>
+    </div>
+
+    <div class="demo">
+      <div class="box"><sticker-limon size="150"></sticker-limon></div>
+      <code>size="150" · más pequeño</code>
+    </div>
+
+    <div class="demo">
+      <div class="box"><img src="../assets/limon.svg" alt="Limón" height="220"></div>
+      <code>SVG suelto · &lt;img src="limon.svg"&gt;</code>
+    </div>
+
+    <div class="demo">
+      <div class="box"><img src="../assets/chorizo.svg" alt="Chorizo" height="220"></div>
+      <code>SVG suelto · &lt;img src="chorizo.svg"&gt;</code>
+    </div>
+  </div>
+
+  <script type="module" src="../src/index.js"></script>
+</body>
+</html>

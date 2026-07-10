@@ -1,0 +1,44 @@
+{
+  "name": "animated-sticker",
+  "version": "0.1.0",
+  "description": "Mascotas sticker animadas (limón, chorizo…) como Web Components sin dependencias.",
+  "author": "agustinamu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agustinamu/animated-sticker.git"
+  },
+  "homepage": "https://github.com/agustinamu/animated-sticker#readme",
+  "bugs": "https://github.com/agustinamu/animated-sticker/issues",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./limon": "./src/limon.js",
+    "./chorizo": "./src/chorizo.js",
+    "./base": "./src/sticker-base.js",
+    "./assets/*": "./assets/*"
+  },
+  "files": [
+    "src",
+    "assets",
+    "README.md"
+  ],
+  "sideEffects": [
+    "./src/index.js",
+    "./src/limon.js",
+    "./src/chorizo.js"
+  ],
+  "keywords": [
+    "web-components",
+    "custom-elements",
+    "svg",
+    "animation",
+    "sticker",
+    "mascot"
+  ],
+  "scripts": {
+    "demo": "python3 -m http.server 8080"
+  },
+  "license": "MIT"
+}
