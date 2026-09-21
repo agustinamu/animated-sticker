@@ -3,7 +3,7 @@
 Mascotas *sticker* animadas como **Web Components** — sin dependencias, sin build, sin framework.
 Funcionan igual en HTML plano, React, Vue, Svelte o WordPress: son elementos HTML nativos.
 
-![Limón y chorizo bailando](docs/hero.png)
+![Limón y chorizo bailando](docs/hero.gif)
 
 ## Personajes
 
